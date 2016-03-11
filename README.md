@@ -22,11 +22,20 @@ Today, web sites are increasingly being viewed on many different size devices ot
 
 ### Strategies
 
-Some strategies include...
+One strategy for adjusting content for different devices is by using device detection, where the server looks at the request headers user agent value of the browser making the request. Based on the user-agent the server determines whether to serve up desktop content from site A or mobile content from site B. The main downside of doing it this way is that it requires creating two seperate websites, one for larger screen and one for smaller screen devices. You can imagine then if we are asked to make a change in the content, we may need to change the content on two different sites A and B.
+
+Another strategy, the one will will explore in more detail in the lessons to come are by using CSS Media Queries. This allows us to have a single site that will adjust the layout and content depending upon the size of the device screen. The basic idea behind media query driven repsonsive sites is to serve the same page to all browsers. When the content loads in the browser we first check the screen size (viewport) dimensions and apply additonal CSS rules to adjust our layout and its content accordingly.
+
+### Design Philosophy
+
+When we set out to design a repsonsive site we can choose to either design for larger devices and write media queries that adjust things when screens shrink in size (desktop down), or we can start designing our site for smaller devices and use media queries to adjust things as the screen gets larger (mobile up). Ultimately this should be dependent upon the content of your site and what devices you anticipate will be most used to view your content. With increasing mobile and tablet usage for browsing the web, (at the time of writing this lesson) mobile up, otherwise known as mobile first has become an increasingly popular strategy to use.
 
 ## Summary
 
-- ...
+- With an increasing number of different size devices browsing the web, having a responsive site design is crucial.
+- It is ideal to use CSS media queries to create a single website that will respond to different size devices.
+- Desktop Down describes designing your site for larger screens and making accomodations that adjust for smaller screens. 
+- Mobile Up (Mobile First) describes designing your site for small screens and making accomodations that adjust for larger screens.
 
 ## Resources
 
